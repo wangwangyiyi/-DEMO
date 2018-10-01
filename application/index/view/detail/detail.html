@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+    <title>土锤日记</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="__INDEX__/css-1/base.css">
+	<link rel="stylesheet" href="__INDEX__/css-1/skeleton.css">
+	<link rel="stylesheet" href="__INDEX__/css-1/screen.css">
+    <link rel="stylesheet" href="__INDEX__/css-1/mediaelementplayer.css" />
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="stylesheets/ie7.css">
+    <![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <!-- Fonts
+	================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic,300,300italic' rel='stylesheet' type='text/css'>
+    
+    <!-- Scripts
+	================================================== -->
+    
+</head>
+
+<body>
+
+	<!-- Site Backgrounds
+	================================================== -->
+	
+    <!-- Change to class="poswrapheaderline wide" and class="headerline full" for a full-width header line -->
+	<div class="poswrapheaderline"><div class="headerline"></div></div>  
+    <!-- Remove or uncomment depending on if you want a background image or tile -->
+    <div class="tiledbackground"></div>
+    <!--img src="images/bg.jpg" alt="" id="background" /-->
+    <!-- Change to class="poswrapper wide" and class="whitebackground full" for a full-width site background -->
+    <div class="poswrapper"><div class="whitebackground"></div></div>
+
+	<div class="container main portfolio4column">
+    
+        <!-- Header | Logo, Menu
+		================================================== -->
+
+        <!-- Page Title And Social
+		================================================== -->
+                
+        <div class="pagetitle">
+            <div class="pagetitleholder"><a href="{:url('Index/index')}"><h1>首页</h1></a></div>
+            <div class="socialholder">
+                <ul class="socialicons">
+                    <li><a href="#" class="social_facebook"></a><div>Facebook</div></li>
+                    <li><a href="#" class="social_twitter"></a><div>Twitter</div></li>
+                    <li><a href="#" class="social_googleplus"></a><div>GooglePlus</div></li>
+                    <li><a href="#" class="social_vimeo"></a><div>Vimeo</div></li>
+                    <li><a href="#" class="social_rss"></a><div>RSS Feed</div></li>
+                    <li><a href="#" class="social_linkedin"></a><div>LinkedIn</div></li>
+                    <li><a href="#" class="social_flickr"></a><div>Flickr</div></li>
+                    <li><a href="#" class="social_youtube"></a><div>Youtube</div></li>
+                    <li><a href="#" class="social_pinterest"></a><div>Pinterest</div></li>
+                </ul>
+            </div>
+            <!--div class="pagetitlebackground"></div-->
+        </div>
+        
+		
+        <!-- No Slider Spacer
+		================================================== -->
+        
+        <div class="sixteen columns nosliderspacer"></div>
+        
+        <!-- Content Holder -->
+		<div class="sixteen columns row textblock blogsingle fullblog">
+        
+        	<!-- Blogpost -->
+            <div class="blogpost row">
+                <div class="blogdate">
+                    <div class="month">Feb</div>
+                    <div class="day">17</div>
+                    <div class="year">2012</div>
+                </div>
+                <div class="postholder">
+                	<div class="blogtitle"><h4><a href="#">{$detail.blog_art_name}</a></h4></div>
+                    <div class="postinfo">
+                        <span class="dateinfo"></span>时间:<a href="#">{$detail.blog_art_time|date="y-m-d-h-m-s",###}</a>
+                    </div>
+                    <img src="http://www.tp5.com/blog/public/uploads/{$detail.blog_art_pic}" width="200px" height="200px" alt="asefweaf">
+                    <div class="postbody">
+
+
+
+                        <div class="postcontent">
+                            <h4>{$detail.blog_art_author}</h4>
+                    
+                            <h1>{$detail.blog_art_content}</h1>
+                            <p>{$detail.blog_art_desc}</p>
+                            
+                            <!-- 3 column -->
+                           
+                           
+                    	</div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div> 
+
+            <!-- Post Comments -->
+                    
+            <div id="comments" class="sixteen columns row alpha">
+                
+                <!-- Comment -->
+                <ul>
+                
+                    <!-- Reply -->
+                    
+                    <li class="depth-1">
+                        <div class="commentwrap">
+                        	<div class="replylink"><a href="#" class="link"><span>&rarr;</span> Reply</a></div>
+                            <div class="author"><a href="#">John Doe</a></div>
+                            <div class="timestamp">April 20th, 2011</div><div class="clear"></div>
+                            <div class="postertext">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>            
+                            </div><div class="clear"></div>
+                        </div>
+                    </li>
+                    
+                    <!-- Reply -->
+                    
+                   
+                    <!-- Reply -->
+                
+                    
+                    <br style="clear: left;"/>
+                    
+                </ul>
+                
+                <div class="clear"></div>
+            </div>
+            
+            <!-- Comment Form -->
+                    
+            <div id="respond">
+                <h5 class="teaserheadline" style="margin-bottom:18px;">Leave A Reply</h5>
+                <form id="replyform" method="post" action="#">
+                   
+                    <textarea name="message" id="reply_message" class="requiredfield" onFocus="if(this.value == 'Message *') { this.value = ''; }" onBlur="if(this.value == '') { this.value = 'Message *'; }">Message *</textarea>
+                    <button type="submit" name="send">提交评论</button>
+                </form>
+            </div>
+ 
+            <div class="clear"></div>
+		</div>
+
+        <!-- Space Adjuster
+        ================================================== -->
+        
+        <div class="sixteen columns bottomadjust"></div>
+   
+	</div><!-- container -->
+
+	<!-- Footer
+	================================================== -->
+	
+    <!-- Change to class="container footerwrap full" for a full-width footer -->
+	
+    <!-- Sub-Footer
+	================================================== -->
+    
+    <!-- Change to class="container subfooterwrap full" for a full-width subfooter -->
+    
+        </div>
+    </div>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

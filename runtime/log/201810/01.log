@@ -1,0 +1,512 @@
+---------------------------------------------------------------
+[ 2018-10-01T16:38:11+08:00 ] 127.0.0.1 GET /blog/public/index/personalcenter/address.html
+[ info ] www.tp5.com/blog/public/index/personalcenter/address.html [运行时间：2.367536s][吞吐率：0.42req/s] [内存消耗：3,065.73kb] [文件加载：59]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'personalcenter',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Personalcenter->address[ C:\wamp\www\blog\application\index\controller\Personalcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] C:\wamp\www\blog\public/../application/index\view\personalcenter\address.html [ array (
+  0 => 'blog_user',
+  1 => 'address',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052501s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user` [ RunTime:0.167503s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user` WHERE  `username` IS NULL LIMIT 1 [ RunTime:0.042501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_user_address` [ RunTime:0.090001s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_user_address` WHERE  `blog_user_id` IS NULL [ RunTime:0.002500s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:14+08:00 ] 127.0.0.1 POST /blog/public/index/personalcenter/privance.html
+[ info ] www.tp5.com/blog/public/index/personalcenter/privance.html [运行时间：0.460007s][吞吐率：2.17req/s] [内存消耗：2,933.70kb] [文件加载：55]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'personalcenter',
+    2 => 'privance',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://www.tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp5.com/blog/public/index/personalcenter/address.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  'param1' => 'value1',
+)
+[ info ] [ RUN ] app\index\controller\Personalcenter->privance[ C:\wamp\www\blog\application\index\controller\Personalcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017501s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `province` [ RunTime:0.162502s ]
+[ sql ] [ SQL ] SELECT * FROM `province` [ RunTime:0.002500s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:15+08:00 ] 127.0.0.1 POST /blog/public/index/personalcenter/city.html
+[ info ] www.tp5.com/blog/public/index/personalcenter/city.html [运行时间：0.690011s][吞吐率：1.45req/s] [内存消耗：2,933.31kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'personalcenter',
+    2 => 'city',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '7',
+  'accept' => '*/*',
+  'origin' => 'http://www.tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp5.com/blog/public/index/personalcenter/address.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  'father' => '',
+)
+[ info ] [ RUN ] app\index\controller\Personalcenter->city[ C:\wamp\www\blog\application\index\controller\Personalcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017500s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `city` [ RunTime:0.400006s ]
+[ sql ] [ SQL ] SELECT * FROM `city` WHERE  (  father=110000 ) [ RunTime:0.027501s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:15+08:00 ] 127.0.0.1 POST /blog/public/index/personalcenter/area.html
+[ info ] www.tp5.com/blog/public/index/personalcenter/area.html [运行时间：0.795012s][吞吐率：1.26req/s] [内存消耗：2,936.04kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'personalcenter',
+    2 => 'area',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '7',
+  'accept' => '*/*',
+  'origin' => 'http://www.tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp5.com/blog/public/index/personalcenter/address.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  'father' => '',
+)
+[ info ] [ RUN ] app\index\controller\Personalcenter->area[ C:\wamp\www\blog\application\index\controller\Personalcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `area` [ RunTime:0.367506s ]
+[ sql ] [ SQL ] SELECT * FROM `area` WHERE  (  father=110100 ) [ RunTime:0.147502s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:15+08:00 ] 127.0.0.1 POST /blog/public/index/personalcenter/area.html
+[ info ] www.tp5.com/blog/public/index/personalcenter/area.html [运行时间：0.232504s][吞吐率：4.30req/s] [内存消耗：2,936.06kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'personalcenter',
+    2 => 'area',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => '*/*',
+  'origin' => 'http://www.tp5.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://www.tp5.com/blog/public/index/personalcenter/address.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  'father' => '110100',
+)
+[ info ] [ RUN ] app\index\controller\Personalcenter->area[ C:\wamp\www\blog\application\index\controller\Personalcenter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002500s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `area` [ RunTime:0.012500s ]
+[ sql ] [ SQL ] SELECT * FROM `area` WHERE  (  father=110100 ) [ RunTime:0.010000s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:18+08:00 ] 127.0.0.1 GET /blog/public/index/index/index.html
+[ info ] www.tp5.com/blog/public/index/index/index.html [运行时间：0.732511s][吞吐率：1.37req/s] [内存消耗：3,509.55kb] [文件加载：62]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/personalcenter/address.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ C:\wamp\www\blog\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\wamp\www\blog\public/../application/index\view\index\index.html [ array (
+  0 => 'category',
+  1 => 'result',
+  2 => 'prose',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012500s ] mysql:host=127.0.0.1;dbname=blog;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_category` [ RunTime:0.057501s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_category` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_other` [ RunTime:0.042501s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_other` WHERE  `blog_other_id` = 0 LIMIT 1 [ RunTime:0.027500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `blog_art` [ RunTime:0.067501s ]
+[ sql ] [ SQL ] SELECT * FROM `blog_art` WHERE  `blog_category_id` = 29 LIMIT 1 [ RunTime:0.030000s ]
+---------------------------------------------------------------
+[ 2018-10-01T16:38:22+08:00 ] 127.0.0.1 GET /blog/public/index/index/images/theme-pics/woman.jpg
+[ info ] www.tp5.com/blog/public/index/index/images/theme-pics/woman.jpg [运行时间：0.577509s][吞吐率：1.73req/s] [内存消耗：2,123.91kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  'pics' => 'woman.jpg',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:22+08:00 ] 127.0.0.1 GET /blog/public/static/index/font/custom-iconsf59a.woff?46333765
+[ info ] www.tp5.com/blog/public/static/index/font/custom-iconsf59a.woff?46333765 [运行时间：0.165003s][吞吐率：6.06req/s] [内存消耗：1,792.92kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'font',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'origin' => 'http://www.tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tp5.com/blog/public/static/index/css/custom-icons.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:22+08:00 ] 127.0.0.1 GET /blog/public/images/theme-pics/parallax/parallax-4.jpg
+[ info ] www.tp5.com/blog/public/images/theme-pics/parallax/parallax-4.jpg [运行时间：0.207503s][吞吐率：4.82req/s] [内存消耗：1,792.71kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'theme-pics',
+    2 => 'parallax',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/static/index/css/neko-framework-layout.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:22+08:00 ] 127.0.0.1 GET /blog/public/images/theme-pics/large/large-pic-9.jpg
+[ info ] www.tp5.com/blog/public/images/theme-pics/large/large-pic-9.jpg [运行时间：0.170002s][吞吐率：5.88req/s] [内存消耗：1,792.65kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'images',
+    1 => 'theme-pics',
+    2 => 'large',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/static/index/css/neko-framework-layout.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:24+08:00 ] 127.0.0.1 GET /blog/public/static/index/font/custom-iconsf59a.ttf?46333765
+[ info ] www.tp5.com/blog/public/static/index/font/custom-iconsf59a.ttf?46333765 [运行时间：0.165002s][吞吐率：6.06req/s] [内存消耗：1,792.94kb] [文件加载：46]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'index',
+    2 => 'font',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'origin' => 'http://www.tp5.com',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://www.tp5.com/blog/public/static/index/css/custom-icons.css',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:25+08:00 ] 127.0.0.1 GET /blog/public/index/index/js-plugins/jquery-cookie/jquery.cookie.js?_=1538383103729
+[ info ] www.tp5.com/blog/public/index/index/js-plugins/jquery-cookie/jquery.cookie.js?_=1538383103729 [运行时间：0.160003s][吞吐率：6.25req/s] [内存消耗：2,074.48kb] [文件加载：51]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'js-plugins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'referer' => 'http://www.tp5.com/blog/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1538383103729',
+  'cookie' => 'jquery.cookie.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:27+08:00 ] 127.0.0.1 GET /blog/public/index/index/favicon.ico
+[ info ] www.tp5.com/blog/public/index/index/favicon.ico [运行时间：0.194507s][吞吐率：5.14req/s] [内存消耗：2,123.59kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'favicon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:28+08:00 ] 127.0.0.1 GET /blog/public/index/user/login.html
+[ info ] www.tp5.com/blog/public/index/user/login.html [运行时间：0.402507s][吞吐率：2.48req/s] [内存消耗：2,353.20kb] [文件加载：56]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; __utma=115279042.1815351004.1537706883.1538317552.1538320515.11; PHPSESSID=b6a7tb7n799v4dviks402lcq95',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\User->login[ C:\wamp\www\blog\application\index\controller\User.php ]
+[ info ] [ VIEW ] C:\wamp\www\blog\public/../application/index\view\user\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:28+08:00 ] 127.0.0.1 GET /blog/public/captcha.html
+[ info ] www.tp5.com/blog/public/captcha.html [运行时间：0.512508s][吞吐率：1.95req/s] [内存消耗：1,765.64kb] [文件加载：42]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; PHPSESSID=b6a7tb7n799v4dviks402lcq95; __utma=115279042.1815351004.1537706883.1538320515.1538383108.12; __utmb=115279042.0.10.1538383108; __utmc=115279042',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ C:\wamp\www\blog\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-10-01T16:38:29+08:00 ] 127.0.0.1 GET /blog/public/index/user/icon.ico
+[ info ] www.tp5.com/blog/public/index/user/icon.ico [运行时间：0.224505s][吞吐率：4.45req/s] [内存消耗：2,134.14kb] [文件加载：54]
+[ info ] [ LANG ] C:\wamp\www\blog\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'icon.ico',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.tp5.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://www.tp5.com/blog/public/index/user/login.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8,und;q=0.7',
+  'cookie' => 'thinkphp_show_page_trace=0|0; sidebar-fixed=false; breadcrumbs-fixed=false; page-header-fixed=false; navbar-fixed-top=false; Hm_lvt_8fc305dff9032c5216340d8dc5820b12=1533216978; Hm_lvt_19cb2b12df1696951c94004f463436b4=1533216978; guid=97823001.2864945892521891300.1533514182408.8755; XwGwvO_admin_username=frank; __utmz=115279042.1537706883.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); Hm_lvt_dde6ba2851f3db0ddc415ce0f895822e=1537877040,1538144812,1538219795,1538298458; PHPSESSID=b6a7tb7n799v4dviks402lcq95; __utma=115279042.1815351004.1537706883.1538320515.1538383108.12; __utmb=115279042.0.10.1538383108; __utmc=115279042',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

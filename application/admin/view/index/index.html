@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <title>土锤后台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"/>
+    <!-- Le styles -->
+    <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/css/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/css/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/css/admin.css" rel="stylesheet">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>    
+<body>
+
+<div class="container">
+		{include file="common/header"/}
+	
+	
+	<div class="main-area dashboard">
+
+		<div class="row">
+		
+			<div class="span10">
+			
+				<div class="slate clearfix">
+				
+					<a class="stat-column" href="#">
+						
+						<span class="number">16</span>
+						<span>订单数量</span>
+						
+					</a>
+				
+					<a class="stat-column" href="#">
+						
+						<span class="number">452</span>
+						<span>总收入</span>
+						
+					</a>
+				
+					<a class="stat-column" href="#">
+						
+						<span class="number">$2,512</span>
+						<span>用户数量</span>
+						
+					</a>
+				
+					<a class="stat-column" href="#">
+						
+						<span class="number">348</span>
+						<span>今日访问量</span>
+						
+					</a>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="row">
+		
+			<div class="span5">
+			
+				<div class="slate">
+				
+					<div class="page-header">
+						<h2><i class="icon-signal pull-right"></i>统计</h2>
+					</div>
+					<div id="placeholder" style="height: 297px;"></div>
+				
+				</div>
+			
+			</div>
+		
+			<div class="span5">
+			
+				<div class="slate">
+				
+					<div class="page-header">
+						<h2><i class="icon-shopping-cart pull-right"></i>订单列表</h2>
+					</div>
+					
+					<table class="orders-table table">
+					<tbody>
+						<tr>
+							<td><a href="">#12345 - Joe Bloggs</a> <span class="label label-info">Paid</span></td>
+							<td>$112.00</td>
+						</tr>
+					
+					</tbody>
+					</table>
+
+				</div>
+			
+			</div>
+		
+		</div>
+		
+		<div class="row">
+		
+			<div class="span5">
+			
+				<div class="slate">
+				
+					<div class="page-header">
+						<h2><a class="pull-right iconlink" href=""><i class="icon-rss"></i></a>新闻</h2>
+					</div>
+				
+					<table class="orders-table table">
+					<tbody>
+						<tr>
+							<td><a href="">News article title</a></td>
+							<td class="date">Today at 12:01</td>
+						</tr>
+						
+					</tbody>
+					</table>
+
+				</div>
+			
+			</div>
+		
+			<div class="span5">
+			
+				<div class="slate">
+				
+					<div class="page-header">
+						<h2><i class="icon-envelope-alt pull-right"></i>查询</h2>
+					</div>
+				
+					<table class="orders-table table">
+					<tbody>
+						<tr>
+							<td><a href="">Customer enquiry</a> <span class="label label-info">New</span></td>
+							<td class="date">Today at 12:01</td>
+						</tr>
+						<tr>
+							<td><a href="">Another customer enquiry</a> <span class="label label-info">New</span></td>
+							<td class="date">Yesterday at 16:34</td>
+						</tr>
+						<tr>
+							<td colspan="2"><a href="">View more enquiries</a></td>
+						</tr>
+					</tbody>
+					</table>
+
+				</div>
+			
+			</div>
+		
+		</div>
+		{include file="common/footer"/}
+				
+		
+		
+	</div>
+	
+	</div> <!-- end span10 -->
+		
+	</div> <!-- end row -->
+		
+</div> <!-- end container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__ADMIN__/js/jquery.min.js"></script>
+<script src="__ADMIN__/js/bootstrap.js"></script>
+<script src="__ADMIN__/js/excanvas.min.js"></script>
+<script src="__ADMIN__/js/jquery.flot.min.js"></script>
+<script src="__ADMIN__/js/jquery.flot.resize.js"></script>
+<script type="text/javascript">
+$(function () {
+    var d1 = [];
+        d1.push([0, 32]);
+        d1.push([1, 30]);
+        d1.push([2, 24]);
+        d1.push([3, 17]);
+        d1.push([4, 11]);
+        d1.push([5, 25]);
+        d1.push([6, 28]);
+        d1.push([7, 36]);
+        d1.push([8, 44]);
+        d1.push([9, 52]);
+        d1.push([10, 53]);
+        d1.push([11, 50]);
+        d1.push([12, 45]);
+        d1.push([13, 42]);
+        d1.push([14, 40]);
+        d1.push([15, 36]);
+        d1.push([16, 34]);
+        d1.push([17, 24]);
+        d1.push([18, 17]);
+        d1.push([19, 17]);
+        d1.push([20, 20]);
+        d1.push([21, 28]);
+        d1.push([22, 36]);
+        d1.push([23, 38]);
+
+    $.plot($("#placeholder"), [ d1 ], { grid: { backgroundColor: 'white', color: '#999', borderWidth: 1, borderColor: '#DDD' }, colors: ["#FC6B0A"], series: { lines: { show: true, fill: true, fillColor: "rgba(253,108,11,0.4)" } } });
+});
+</script>
+
+
+</body>
+</html>

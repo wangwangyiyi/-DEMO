@@ -1,0 +1,85 @@
+		<header class="menu-header navbar-fixed-top" role="banner">
+			<div class="container">
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="navbar-header">
+						<!-- hamburger button -->
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="sr-only">菜单</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- / hamburger button -->
+
+						<!-- logo -->
+						<a class="navbar-brand" href="index.html">
+							<img src="http://www.tp5.com/blog/public/uploads/{$result.blog_logo}" style="height: 40px" alt="EDENA website template" class="main-logo"/>
+							<img src="http://www.tp5.com/blog/public/uploads/{$result.blog_logo}" style="height: 40px" alt="EDENA website template" class="main-logo-light"/>
+						</a>
+						<!-- / logo -->
+					</div>
+					<div class="collapse navbar-collapse">
+						<!-- Main navigation -->
+						<ul class="nav navbar-nav navbar-right">
+
+							<li>
+								<a href="#" class="has-sub-menu">站点导航</a>
+								<ul class="sub-menu">
+									{volist name="category" id="vo"}
+									<li> 
+										<a href="#" class="has-sub-menu">{$vo.category_name}</a>
+										<ul class="sub-menu">
+											{volist name="vo['children']" id="chl"}
+											<li>
+												<a href="{:url('Category/category')}?id={$chl.id}">{$chl.category_name}</a>
+												<!-- <ul class="sub-menu">
+													<li><a href="features-header-large.html">陈冠希</a></li>
+												</ul> -->
+
+											</li>
+											{/volist}
+										</ul>
+									</li>
+									{/volist}
+								</ul>
+							</li>
+
+							<li>
+								<a href="#" class="has-sub-menu">日记</a>
+								<ul class="sub-menu">
+									<li><a href="shop-home.html">杂七杂八</a></li>
+									<li><a href="shop-products.html">建站日志</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="has-sub-menu">个人中心</a>
+								<ul class="sub-menu">
+									<li><a href="{:url('Personalcenter/personalcenter')}">进入个人中心</a></li>
+									<li><a href="login.html">签到</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="{:url('Donationcenter/donationcenter')}" class="has-sub-menu">捐助中心</a>
+								<ul class="sub-menu">
+									<li><a href="{:url('Donationcenter/donationcenter')}">扫码支付</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="has-sub-menu">登录</a>
+								<ul class="sub-menu">
+									<li><a href="{:url('User/login')}">登录</a></li>
+									<li><a href="{:url('User/register')}">没有号码？</a></li>
+								</ul>
+							</li>
+							<li><a href="#">下载客户端</a></li>
+
+							<li><a href="{:url('Contact/contact')}">联系我们</a></li>
+						</ul>
+						<!-- / End main navigation -->
+					</div>
+
+
+				</nav>
+			</div>
+
+		</header>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>	
+</head>
+<body>
+	<div class="box">
+		<select name="province" class="province"></select>
+		<select name="city" class="city"></select>
+		<select name="area" class="area"></select>
+	</div>
+</body>
+
+
+<!-- Jquery代码（需要引入jQuery）： -->
+<script>
+/* 省市区三级联动 */
+function privance() //省
+{
+$.post("{:url('Personalcenter/privance')}", {param1: 'value1'}, function(data, textStatus, xhr) {
+var html;
+for (var i = 0; i<data.length; i++) {
+html += "<option value='"+data[i]['provinceID']+"'>"+data[i]['province']+"</option>";
+}
+$('.province').html(html);
+});
+}
+privance();
+
+function city() //市
+{
+var provinceid = $('.province').val(); //省id
+console.log(provinceid)
+$.post("{:url('Personalcenter/city')}", {father: provinceid}, function(data, textStatus, xhr) {
+var html;
+for (var i = 0; i<data.length; i++) {
+html += "<option value='"+data[i]['cityID']+"'>"+data[i]['city']+"</option>";
+}
+$('.city').html(html);
+area();
+});
+}
+
+city();
+
+function area() //县
+{
+var cityid = $('.city').val(); //市id
+//alert(cityid);
+$.post("{:url('Personalcenter/area')}", {father: cityid}, function(data, textStatus, xhr) {
+var html;
+for (var i = 0; i<data.length; i++) {
+html += "<option value='"+data[i]['areaID']+"'>"+data[i]['area']+"</option>";
+}
+$('.area').html(html);
+});
+}
+area();
+
+$('.province').change(function(event) { //选择省
+city();
+});
+
+$('.city').change(function(event) { //选择市
+area();
+});
+/* 省市区三级联动 end */
+
+</script>
+</html>

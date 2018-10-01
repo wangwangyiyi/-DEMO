@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <title>土锤后台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"/>
+    <!-- Le styles -->
+    <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/css/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/css/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/css/admin.css" rel="stylesheet">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>    
+<body>
+
+<div class="container">
+		
+	<div class="row">
+		
+		<div class="span2">
+		
+		<div class="main-left-col">
+		
+			<h1><i class="icon-shopping-cart icon-large">我的博客</i></h1>
+			
+			<ul class="side-nav">
+
+				<li class="active">
+					<a href="index.html"><i class="icon-home"></i> 首页</a>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#website-dropdown" href="#"><i class="icon-sitemap"></i> 栏目管理 <b class="caret"></b></a>
+					<ul id="website-dropdown" class="collapse">
+						<li><a href="listing.html">栏目列表</a></li>
+						<li><a href="listing.html">文章管理</a></li>
+						<li><a href="listing.html">图片管理</a></li>
+
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#store-dropdown" href="#"><i class="icon-shopping-cart"></i> 个人中心 <b class="caret"></b></a>
+					<ul id="store-dropdown" class="collapse">
+						<li><a href="listing.html">签到详情</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#reports-dropdown" href="#"><i class="icon-signal"></i> 用户管理 <b class="caret"></b></a>
+					<ul id="reports-dropdown" class="collapse">
+						<li><a href="report.html">用户列表</a></li>
+						<li><a href="report.html">管理员列表</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#members-dropdown" href="#"><i class="icon-group"></i> 浏览量 <b class="caret"></b></a>
+					<ul id="members-dropdown" class="collapse">
+						<li><a href="listing.html">总浏览量</a></li>
+						<li><a href="listing.html">月浏览量</a></li>
+						<li><a href="listing.html">今日浏览量</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="collapse" data-target="#settings-dropdown" href="#"><i class="icon-cogs"></i> 系统设置 <b class="caret"></b></a>
+					<ul id="settings-dropdown" class="collapse">
+						<li><a href="listing.html">后台权限设置</a></li>
+						<li><a href="listing.html">网站LOGO</a></li>
+						<li><a href="listing.html">背景音乐</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		
+		</div> <!-- end main-left-col -->
+	
+	</div> <!-- end span2 -->
+	
+	<div class="span10">
+		
+		<div class="secondary-masthead">
+	
+		<ul class="nav nav-pills pull-right">
+			<li>
+				<a href="#"><i class="icon-globe"></i> 流量可视化</a>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="icon-user"></i> WANGYI<b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><a href="profile.html">个人资料</a></li>
+					<li class="active"><a href="form.html">账号设置</a></li>
+					<li><a href="">退出</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<ul class="breadcrumb">
+			<li>
+				<a href="#">博客后台</a> <span class="divider">/</span>
+			</li>
+			<li class="active">主页</li>
+		</ul>
+		
+	</div>
+	
+	<div class="main-area dashboard">
+	
+			<div class="alert alert-info">
+				<a class="close" data-dismiss="alert" href="#">x</a>
+				<h4 class="alert-heading">信息</h4>
+				编辑和修改表单
+			</div>
+			
+			<div class="alert alert-error">
+				<a class="close" data-dismiss="alert" href="#">x</a>
+				<h4 class="alert-heading">失败</h4>
+				Example of an error message alert.
+			</div>
+			
+			<div class="alert alert-success">
+				<a class="close" data-dismiss="alert" href="#">x</a>
+				<h4 class="alert-heading">成功</h4>
+				Example of an success message alert.
+			</div>
+			
+			<div class="alert alert-warning">
+				<a class="close" data-dismiss="alert" href="#">x</a>
+				<h4 class="alert-heading">警告</h4>
+				Example of an warning message alert.
+			</div>
+			
+			<div class="row">
+			
+				<div class="span10">
+				
+					<div class="slate">
+					
+						<form class="form-inline">
+							<input type="text" class="input-large" placeholder="关键词搜索...">
+							<select class="span2">
+								<option value=""> - 开始日期 - </option>
+							</select>
+							<select class="span2">
+								<option value=""> - 结束日期 - </option>
+							</select>
+							<select class="span2">
+								<option value=""> - 过滤词 - </option>
+							</select>
+							<button type="submit" class="btn btn-primary">搜索</button>
+						</form>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			<div class="row">
+				
+					<div class="span10 listing-buttons">
+				
+					<button class="btn btn-info">操作</button>
+				
+					<button class="btn btn-success">操作</button>
+				
+					<button class="btn btn-primary">添加</button>
+				
+				</div>
+				
+				<div class="span10">
+				
+					<div class="slate">
+					
+						<div class="page-header">
+							<h2>表单标题</h2>
+						</div>
+					
+						<form class="form-horizontal">
+						<fieldset>
+						  <div class="control-group">
+						    <label class="control-label" for="focusedInput">标题</label>
+						    <div class="controls">
+						      <input class="input-xlarge focused" id="focusedInput" type="text" value="标题...">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label">标题</label>
+						    <div class="controls">
+						      <span class="input-xlarge uneditable-input">不可点击控制</span>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="disabledInput">标题</label>
+						    <div class="controls">
+						      <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="select">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="optionsCheckbox2">标题</label>
+						    <div class="controls">
+						      <label class="checkbox">
+						        <input type="checkbox" id="optionsCheckbox2" value="option1" disabled>
+						       不可点击控制
+						      </label>
+						    </div>
+						  </div>
+						  <div class="control-group warning">
+						    <label class="control-label" for="inputWarning">标题</label>
+						    <div class="controls">
+						      <input type="text" id="inputWarning">
+						      <span class="help-inline">Something may have gone wrong</span>
+						    </div>
+						  </div>
+						  <div class="control-group error">
+						    <label class="control-label" for="inputError">标题</label>
+						    <div class="controls">
+						      <input type="text" id="inputError">
+						      <span class="help-inline">Please correct the error</span>
+						    </div>
+						  </div>
+						  <div class="control-group success">
+						    <label class="control-label" for="inputSuccess">标题</label>
+						    <div class="controls">
+						      <input type="text" id="inputSuccess">
+						      <span class="help-inline">Woohoo!</span>
+						    </div>
+						  </div>
+						  <div class="control-group success">
+						    <label class="control-label" for="selectError">复选框</label>
+						    <div class="controls">
+						      <select id="selectError">
+						        <option>1</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+						      </select>
+						      <span class="help-inline">Woohoo!</span>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+
+					</div>
+				
+				</div>
+				
+				<div class="span5">
+				
+					<div class="slate">
+								
+						<div class="page-header">
+							<h2>表单标题</h2>
+						</div>
+									
+						<form class="form-horizontal">
+						<fieldset>
+						  <div class="control-group">
+						    <label class="control-label" for="input01">标题</label>
+						    <div class="controls">
+						      <input type="text" class="input-xlarge" id="input01">
+						      <p class="help-block">本表单描述</p>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="optionsCheckbox">标题</label>
+						    <div class="controls">
+						      <label class="checkbox">
+						        <input type="checkbox" id="optionsCheckbox" value="option1">
+						       为什么选择
+						      </label>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="select01">标题</label>
+						    <div class="controls">
+						      <select id="select01">
+						        <option>something</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+						      </select>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="multiSelect">标题</label>
+						    <div class="controls">
+						      <select multiple="multiple" id="multiSelect">
+						        <option>1</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+						      </select>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="fileInput">标题</label>
+						    <div class="controls">
+						      <input class="input-file" id="fileInput" type="file">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="textarea">标题</label>
+						    <div class="controls">
+						      <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+					
+					</div>
+				
+				</div>
+					
+				<div class="span5">
+				
+					<div class="slate">
+								
+						<div class="page-header">
+							<h2>表单标题</h2>
+						</div>
+									
+						<form class="form-horizontal">
+						<fieldset>
+						  <div class="control-group">
+						    <label class="control-label" for="input01">标题</label>
+						    <div class="controls">
+						      <input type="text" class="input-xlarge" id="input01">
+						      <p class="help-block">本表单描述</p>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="optionsCheckbox">标题</label>
+						    <div class="controls">
+						      <label class="checkbox">
+						        <input type="checkbox" id="optionsCheckbox" value="option1">
+						       为什么选择
+						      </label>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="select01">标题</label>
+						    <div class="controls">
+						      <select id="select01">
+						        <option>something</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+						      </select>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="multiSelect">标题</label>
+						    <div class="controls">
+						      <select multiple="multiple" id="multiSelect">
+						        <option>1</option>
+						        <option>2</option>
+						        <option>3</option>
+						        <option>4</option>
+						        <option>5</option>
+						      </select>
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="fileInput">标题</label>
+						    <div class="controls">
+						      <input class="input-file" id="fileInput" type="file">
+						    </div>
+						  </div>
+						  <div class="control-group">
+						    <label class="control-label" for="textarea">标题</label>
+						    <div class="controls">
+						      <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+						    </div>
+						  </div>
+						</fieldset>
+						</form>
+					
+					</div>
+				
+				</div>
+					
+				<div class="span10 listing-buttons">
+				
+					<button class="btn btn-info">操作</button>
+				
+					<button class="btn btn-success">操作</button>
+				
+					<button class="btn btn-primary">添加</button>
+				
+				</div>
+				
+			</div>
+			
+		<div class="row">
+		
+			<div class="span10 footer">
+			
+				<p>&copy; www.scwangyi.xyz 2018</p>
+			
+			</div>
+		
+		</div>
+		
+	</div>
+	
+	</div> <!-- end span10 -->
+		
+	</div> <!-- end row -->
+		
+</div> <!-- end container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__ADMIN__/js/jquery.min.js"></script>
+<script src="__ADMIN__/js/bootstrap.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
+
+		<title>个人资料</title>
+
+		<link href="__INDEX__/css-2/AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="__INDEX__/css-2/AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="__INDEX__/css-2/css/personal.css" rel="stylesheet" type="text/css">
+		<link href="__INDEX__/css-2/css/infstyle.css" rel="stylesheet" type="text/css">
+		<script src="__INDEX__/css-2/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="__INDEX__/css-2/AmazeUI-2.4.2/assets/js/amazeui.js"></script>			
+	</head>
+
+	<body>
+		<!--头 -->
+	
+			<b class="line"></b>
+		<div class="center">
+			<div class="col-main">
+				<div class="main-wrap">
+
+					<div class="user-info">
+						<!--标题 -->
+						<div class="am-cf am-padding">
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">个人资料</strong> / <small>Personal&nbsp;information</small></div>
+						</div>
+						<hr/>
+
+						<!--头像 -->
+						<div class="user-infoPic">
+
+							<div class="filePic">
+								<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
+								<img class="am-circle am-img-thumbnail" src="__INDEX__/css-2/images/getAvatar.do.jpg" alt="" />
+							</div>
+
+							<p class="am-form-help">头像</p>
+
+							<div class="info-m">
+								<div><b>用户名：<i>{$username}</i></b></div>
+						
+								<div class="vip">
+                                      <span></span><a href="#">会员专享</a>
+								</div>
+							</div>
+						</div>
+
+						<!--个人信息 -->
+						<div class="info-main">
+							<form class="am-form am-form-horizontal" method="post" enctype="multipart/form-data">
+
+								<div class="am-form-group">
+									<label for="user-name2" class="am-form-label">昵称</label>
+									<div class="am-form-content">
+										<input type="text" id="user-name2" name="blog_user_nikename" placeholder="nickname">
+                                          <small>昵称长度不能超过40个汉字</small>
+									</div>
+								</div>
+								<div class="am-form-group">
+									<label for="user-name2" class="am-form-label">头像</label>
+									<div class="am-form-content">
+										<input type="file" id="user-name2"  name="blog_user_pic" placeholder="nickname">
+                                          <small>头像</small>
+									</div>
+								</div>
+								
+								<div class="am-form-group">
+									<label for="user-name2" class="am-form-label">年级</label>
+									<div class="am-form-content">
+										<input type="text" id="user-name2"  name="blog_user_age" placeholder="nickname">
+                                          <small>年级</small>
+									</div>
+								</div>
+								
+								<div class="am-form-group">
+									<label class="am-form-label">性别</label>
+									<div class="am-form-content sex">
+										<label class="am-radio-inline">
+											<input type="radio" name="sex" value="男" data-am-ucheck> 男
+										</label>
+										<label class="am-radio-inline">
+											<input type="radio" name="sex" value="女" data-am-ucheck> 女
+										</label>
+										<label class="am-radio-inline">
+											<input type="radio" name="sex" value="保密" data-am-ucheck> 保密
+										</label>
+									</div>
+								</div>
+
+								<div class="am-form-group">
+									<label for="user-birth" class="am-form-label">生日</label>
+									<div class="am-form-content birth">
+										<div class="birth-select">
+											<select  name="year">
+											</select>
+											<em>年</em>
+										</div>
+										<div class="birth-select2">
+											<select  name="month">
+											</select>
+											<em>月</em></div>
+										<div class="birth-select2">
+											<select  name="date">
+											</select>
+											<em>日</em></div>
+									</div>
+							
+								</div>
+								<div class="am-form-group">
+									<label for="user-phone" class="am-form-label">电话</label>
+									<div class="am-form-content">
+										<input id="user-phone" name="blog_user_phone" placeholder="telephonenumber" type="tel">
+
+									</div>
+								</div>
+								<div class="am-form-group">
+									<label for="user-email" class="am-form-label">电子邮件</label>
+									<div class="am-form-content">
+										<input id="user-email" placeholder="blog_user_email" name="blog_user_email" type="email">
+
+									</div>
+								</div>
+								<!-- <div class="am-form-group address">
+									<label for="user-address" class="am-form-label">收货地址</label>
+									<div class="am-form-content address">
+										<a href="address.html">
+											<p class="new-mu_l2cw">
+												<span class="province">湖北</span>省
+												<span class="city">武汉</span>市
+												<span class="dist">洪山</span>区
+												<span class="street">雄楚大道666号(中南财经政法大学)</span>
+												<span class="am-icon-angle-right"></span>
+											</p>
+										</a>
+
+									</div>
+								</div> -->
+								
+								<div class="info-btn">
+									<button class="am-btn am-btn-danger">保存</button>
+								</div>
+
+							</form>
+						</div>
+
+					</div>
+
+				</div>
+				<!--底部-->
+				
+			</div>
+
+				<aside class="menu">
+				<ul>
+					<p class="m-coupon">
+						<a href="{:url('Index/index')}">
+							<span class="m-title">首页</span>
+						</a>
+					</p>
+					<li class="">
+						<a href="{:url('Personalcenter/personalcenter')}"><i class="am-icon-user"></i>个人中心</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>个人资料</p>
+						<ul>
+							<li> <a href="{:url('Personalcenter/information_edit')}">用户资料添加</a></li>
+							<li> <a href="{:url('Personalcenter/address')}">地址管理</a></li>
+						</ul>
+					</li>
+					
+
+					
+				</ul>
+
+			</aside>
+		</div>
+
+	</body>
+<script type="text/javascript">
+	window.onload=function(){
+	var selects = document.getElementsByTagName("select");//通过标签名获取select对象
+	var date = new Date();
+	var nowYear = date.getFullYear();//获取当前的年
+	for(var i=nowYear-100;i<=nowYear;i++){
+		var optionYear = document.createElement("option");
+		optionYear.innerHTML=i;
+		optionYear.value=i;
+		selects[0].appendChild(optionYear);
+	}
+	for(var i=1;i<=12;i++){
+		var optionMonth = document.createElement("option");
+		optionMonth.innerHTML=i;
+		optionMonth.value=i;
+		selects[1].appendChild(optionMonth);
+	}
+	getDays(selects[1].value,selects[0].value,selects);
+	}// 获取某年某月存在多少天
+
+	function getDaysInMonth(month,year){
+		var days;
+		if (month==1 || month==3 || month==5 || month==7 || month==8 || month==10 || month==12) {days=31;}else if (month==4 || month==6 || month==9 || month==11){days=30;}else{if ((year%4 == 0 && year%100 != 0) || (year%400 == 0)) {     // 判断是否为润二月
+		days=29; 
+		}else { 
+			days=28;
+		 }
+	}return days;
+	}
+	function setDays(){
+		var selects = document.getElementsByTagName("select");
+		var year = selects[0].options[selects[0].selectedIndex].value;
+		var month = selects[1].options[selects[1].selectedIndex].value;
+		getDays(month,year,selects);
+	}
+	function getDays(month,year,selects){
+		var days = getDaysInMonth(month,year);
+		selects[2].options.length = 0;
+		for(var i=1;i<=days;i++){
+			var optionDay = document.createElement("option");optionDay.innerHTML=i;optionDay.value=i;selects[2].appendChild(optionDay);
+	}
+}
+</script>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+    <title>土锤后台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" type="images/x-icon" href="favicon.ico"/>
+    <!-- Le styles -->
+    <link href="http://fonts.googleapis.com/css?family=Oxygen|Marck+Script" rel="stylesheet" type="text/css">
+    <link href="__ADMIN__/css/bootstrap.css" rel="stylesheet">
+    <link href="__ADMIN__/css/font-awesome.css" rel="stylesheet">
+    <link href="__ADMIN__/css/admin.css" rel="stylesheet">
+    
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>    
+<body>
+
+<div class="container">
+		
+		{include file="common/header"/}
+	
+	<div class="main-area dashboard">
+	
+			<div class="alert alert-info">
+				<a class="close" data-dismiss="alert" href="#">x</a>
+				<h4 class="alert-heading">信息</h4>
+				已经列出所有数据，请查看或者编辑
+			</div>
+			
+			<div class="row">
+			
+				<div class="span10">
+				
+					<div class="slate">
+					
+						<form class="form-inline">
+							<input type="text" class="input-large" placeholder="关键词搜索...">
+							<select class="span2">
+								<option value=""> - 开始日期 - </option>
+							</select>
+							<select class="span2">
+								<option value=""> - 结束日期 - </option>
+							</select>
+							<select class="span2">
+								<option value=""> - 过滤词 - </option>
+							</select>
+							<button type="submit" class="btn btn-primary">搜索</button>
+						</form>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			<div class="row">
+				
+				<div class="span10 listing-buttons">
+				
+					<button class="btn btn-info">操作</button>
+				
+					<button class="btn btn-success">操作</button>
+				
+					<button class="btn btn-primary"><a href="{:url('Category/cate_add')}">添加</a></button>
+				
+				</div>
+				
+				<div class="span10">
+				
+					<div class="slate">
+					
+						<div class="page-header">
+							<div class="btn-group pull-right">
+								<button class="btn dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-download-alt"></i> 导出格式
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li><a href="">CSV</a></li>
+									<li><a href="">Excel</a></li>
+									<li><a href="">PDF</a></li>
+								</ul>
+							</div>
+							<h2>列表</h2>
+						</div>
+						<table class="orders-table table">
+						<thead>
+							<tr>
+								<th>列表</th>
+								<th class="actions">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							{volist name="result" id="vo"}
+
+							<tr>
+								<td><a href="detail?id={$vo.id}"><?php echo str_repeat('|--------------',
+									$vo['level']);?>{$vo.category_name}</a>
+									<span class="meta">{$vo.create_time}</span></td>
+								<td class="actions">
+									<a class="btn btn-small btn-danger" onclick="return check()" data-toggle="modal" href="cate_del?id={$vo.id}">删除</a>
+									<a class="btn btn-small btn-primary" href="cate_edit?id={$vo.id}">修改</a>
+								</td>
+							</tr>
+							{/volist}
+	
+						</tbody>
+						</table>
+
+					</div>
+				
+				</div>
+				
+
+			
+					
+				
+				</div>
+				
+			</div>
+			
+		{include file="common/footer"/}
+	
+		
+	</div>
+	
+	</div> <!-- end span10 -->
+		
+	</div> <!-- end row -->
+		
+</div> <!-- end container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="__ADMIN__/js/jquery.min.js"></script>
+<script src="__ADMIN__/js/bootstrap.js"></script>
+<script>
+	function check(){
+		return confirm('确认删除此数据吗？');
+}
+</script>
+
+</body>
+</html>
